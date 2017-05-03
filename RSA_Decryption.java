@@ -41,6 +41,7 @@ public class RSA_Decryption extends javax.swing.JFrame  {
         cipherText.setColumns(20);
         cipherText.setLineWrap(true);
         cipherText.setRows(5);
+        cipherText.setWrapStyleWord(true);
         jScrollPane1.setViewportView(cipherText);
 
         jLabel1.setText("Cipher Text");
@@ -61,6 +62,7 @@ public class RSA_Decryption extends javax.swing.JFrame  {
         plainText.setColumns(20);
         plainText.setLineWrap(true);
         plainText.setRows(5);
+        plainText.setWrapStyleWord(true);
         jScrollPane2.setViewportView(plainText);
 
         jLabel5.setText("Plain Text");
