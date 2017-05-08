@@ -133,7 +133,7 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cipher Text"/>
+        <Property name="text" type="java.lang.String" value="Cipher Text (entered as list of integers seperated by spaces)"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="decryptBtn">

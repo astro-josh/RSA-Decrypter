@@ -44,7 +44,7 @@ public class RSA_Decryption extends javax.swing.JFrame  {
         cipherText.setWrapStyleWord(true);
         jScrollPane1.setViewportView(cipherText);
 
-        jLabel1.setText("Cipher Text");
+        jLabel1.setText("Cipher Text (entered as list of integers seperated by spaces)");
 
         decryptBtn.setText("Decrypt");
         decryptBtn.addActionListener(new java.awt.event.ActionListener() {
