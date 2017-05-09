@@ -1,10 +1,10 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-
 /**
  * @description COSC 314 Final Project
  * @author Joshua Alexander
  */
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class RSA {
     
@@ -126,12 +126,13 @@ public class RSA {
         map.put(24, 'y');
         map.put(25, 'z');
         
+        // determine letter by mod 26
         a = num % 26;
         temp = (num - a) / 26;
         b = temp % 26;
         c = (temp - b) / 26;
         
-        // get the letter value of the number key from map. Return them concat together
+        // get the letter value of the number key from map. Return the result of the letters concated together
         return String.valueOf(map.get(c)) + String.valueOf(map.get(b)) + String.valueOf(map.get(a));
     }
     
@@ -143,16 +144,17 @@ public class RSA {
         }
         
         if (num % 2 == 0 || num % 3 == 0) { 
-            return false; // if num is evenly divisible by 2, 3, or 5, then it is not prime
+            return false; // if num is evenly divisible by 2 or 3, then it is not prime
         }
         
-        // check all numbers starting at 3 up to the square root of thr number if they are divisible by i
+        // check all numbers starting at 3 incrementing by 2 to skip even numbers up to the square root of thr number if they are divisible by i
         for (int i = 3; i < Math.sqrt(num) + 1; i+=2) { 
             if (num % i == 0) {
                 return false; // if num is evenly divisibel by i then it is not prime
             }
         }
         
+        // no factors found, number is prime
         return true;
     }
     

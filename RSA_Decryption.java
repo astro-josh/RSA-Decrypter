@@ -5,15 +5,14 @@
 
 public class RSA_Decryption extends javax.swing.JFrame  {
 
-    /**
-     * Creates new form RSA_Decryption
-     */
+    // Creates new form RSA_Decryption
     public RSA_Decryption() {
         initComponents();
     }
     
     private final RSA a = new RSA();
 
+    // code to set up and layout the visual GUI for the form
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -212,20 +211,20 @@ public class RSA_Decryption extends javax.swing.JFrame  {
 
     // Add spaces button function.
     private void spacesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spacesBtnActionPerformed
-        if(!plainText.getText().isEmpty())
-            plainText.setText(plainText.getText().replaceAll(" ", ""));
+        if(!plainText.getText().isEmpty()) // if plainText area is not empty
+            plainText.setText(plainText.getText().replaceAll(" ", "")); // remove all spaces
     }//GEN-LAST:event_spacesBtnActionPerformed
 
     // To uppercsae button function.
     private void upperBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upperBtnActionPerformed
-        if(!plainText.getText().isEmpty())
-            plainText.setText(plainText.getText().toUpperCase());
+        if(!plainText.getText().isEmpty()) // if plainText area is not empty
+            plainText.setText(plainText.getText().toUpperCase()); // change all letters to uppercase
     }//GEN-LAST:event_upperBtnActionPerformed
 
     // To lowercase button function.
     private void lowerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowerBtnActionPerformed
-        if(!plainText.getText().isEmpty())
-            plainText.setText(plainText.getText().toLowerCase());
+        if(!plainText.getText().isEmpty()) // if plainText area is not empty
+            plainText.setText(plainText.getText().toLowerCase()); // change all letters to lowercase
     }//GEN-LAST:event_lowerBtnActionPerformed
 
     // Main driver of the program, sets up the GUI
