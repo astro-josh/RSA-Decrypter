@@ -1,2 +1,5 @@
 # RSA-Decrypter
 Simple RSA decrypter for n sizes up to 100,000. Uses basic UI to input ciphertext of numbers seperated by spaces. Outputs the decrypted plaintext string.
+
+The RSA decryption program features a GUI to decrypt ciphertext encrypted in RSA with an n value up to and including 100,000.
+The user inputs the public key values “N” and “E” as well as the ciphertext in the form of a string of integers separated by spaces. When the user hits the decryption button, the given “N”, “E”, and ciphertext numbers are checked and if they are valid the decryption process proceeds. If they are not valid, a message is displayed to the user indicating the problem. Decryption starts by adding all the integers of the ciphertext to an array list. Then the decryption algorithm is ran on each number in the list resulting in a new decrypted number which is then converted to text and appended to a string. After all numbers are decrypted, converted to letters and added to a string, the string is displayed as the decrypted message in the plaintext box.
