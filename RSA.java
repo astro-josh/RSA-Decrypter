@@ -83,7 +83,7 @@ public class RSA {
         return error;
     }
     
-    // performs modular exponentiation by continuously calculating the mod after each power evaluation
+    // performs modular exponentiation by repeated squaring
     private int modularExponentiation (int num, int exp, int mod) {
         int result = 1;
    
